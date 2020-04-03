@@ -1,3 +1,7 @@
+//LOGICA DE PROGRAMAÇÃO EM CIMA DA FERRAMENTA V5JS 
+
+
+
 /*
 
 //variáveis da bolinha
