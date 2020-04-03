@@ -5,61 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pong JS</title>
 
-        <link rel="apple-touch-icon" sizes="57x57" href="IMG/Favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="IMG/Favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="IMG/Favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="IMG/Favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="IMG/Favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="IMG/Favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="IMG/Favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="IMG/Favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="IMG/Favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="IMG/Favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="IMG/Favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="IMG/Favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="IMG/Favicon/favicon-16x16.png">
-        <link rel="manifest" href="IMG/Favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="/CSS/paralax.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="IMG/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="IMG/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="IMG/Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="IMG/Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="IMG/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="IMG/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="IMG/Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="IMG/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="IMG/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="IMG/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="IMG/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="IMG/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="IMG/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="IMG/Favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 <body>
     <header>
-        <h1>PONG</h1>
+        <div class="wrapper">
+            <h1>PONG</h1>
+            <h2>Create some depth with the parallax effect</h2>
+        </div>
     </header>
 
-    <div class = "Paralax Biblioteca">
-    <div  id = "pxs_container"  class = "pxs_container" > 
-	<div  class = "pxs_bg" > 
-		<div  class = "pxs_bg1" > </div > 
-		<div  class = "pxs_bg2" > </div > 
-		<div  class = " pxs_bg3 " > </div > 
-	</div > 
-	<div  class = "pxs_loading" >Carregando imagens ... </div > 
-	<div  class = "pxs_slider_wrapper" > 
-		<ul  class = "pxs_slider"> 
-			<li > < img  src = "images / 1.jpg"  alt = "Primeira imagem" /> </li > 
-			<li > < img  src = "images / 2.jpg"  alt = "Segunda imagem" /> </li >
-			...
-		</ul > 
-		<div  class = "pxs_navigation" > 
-			<span  class = "pxs_next" > </span > 
-			<span  class = "pxs_prev" > </span > 
-		</div > 
-		<ul  class = "pxs_thumbnails" > 
-			<li > < img  src = "images / thumbs / 1.jpg"  alt = "Primeira imagem" /></li > 
-			<li > < img  src = "images / thumbs / 2.jpg"  alt = "Segunda imagem" /> </li >
-			...
-		</ul > 
-	</div > 
-</div >
-</div>
+    <div id="pxs_container" class="pxs_container">
+        <div class="pxs_bg">
+            <div class="pxs_bg1"></div>
+            <div class="pxs_bg2"></div>
+            <div class="pxs_bg3"></div>
+        </div>
+        <div class="pxs_loading">Loading images...</div>
+        <div class="pxs_slider_wrapper">
+            <ul class="pxs_slider">
+                <li><img src="images/1.jpg" alt="First Image" /></li>
+                <li><img src="images/2.jpg" alt="Second Image" /></li>
+                <li><img src="images/3.jpg" alt="Third Image" /></li>
+                <li><img src="images/4.jpg" alt="Forth Image" /></li>
+                <li><img src="images/5.jpg" alt="Fifth Image" /></li>
+                <li><img src="images/6.jpg" alt="Sixth Image" /></li>
+            </ul>
+            <div class="pxs_navigation">
+                <span class="pxs_next"></span>
+                <span class="pxs_prev"></span>
+            </div>
+            <ul class="pxs_thumbnails">
+                <li><img src="images/thumbs/1.jpg" alt="First Image" /></li>
+                <li><img src="images/thumbs/2.jpg" alt="Second Image" /></li>
+                <li><img src="images/thumbs/3.jpg" alt="Third Image" /></li>
+                <li><img src="images/thumbs/4.jpg" alt="Forth Image" /></li>
+                <li><img src="images/thumbs/5.jpg" alt="Fifth Image" /></li>
+                <li><img src="images/thumbs/6.jpg" alt="Sixth Image" /></li>
+            </ul>
+        </div>
+    </div>
+
 
 
 
     <canvas width="600" height="400"></canvas>
 
     <script src="JS/pong.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="JS/jquery.parallax.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var $pxs_container	= $('#pxs_container');
+            $pxs_container.parallaxSlider();
+        });
+    </script>
 </body>
 </html>
